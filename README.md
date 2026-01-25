@@ -461,3 +461,6 @@ Database 'input20251' running the upgrade step from version 902 to version 903.
 Database 'input20251' running the upgrade step from version 903 to version 904.
 RESTORE DATABASE successfully processed 62617 pages in 0.427 seconds (1145.640 MB/sec).
 1> 
+
+
+https://chatgpt.com/c/69763b9e-23bc-8321-96f2-1a0a81b1f599
