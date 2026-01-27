@@ -463,4 +463,140 @@ RESTORE DATABASE successfully processed 62617 pages in 0.427 seconds (1145.640 M
 1> 
 
 
+
+
+
+tommy@tommy:~/www_docs/php82/tools_managament_simda_bms_sqlserver$ sudo apt install php8.2-odbc
+The following packages were automatically installed and are no longer required:
+  breeze-cursor-theme           libkf6contacts-data            libkf6userfeedbackwidgets6        libxfconf-0-3
+  breeze-icon-theme             libkf6contacts6                libkf6xmlgui-data                 libxmmsclient-glib1
+  breeze-wallpaper              libkf6declarative-data         libkf6xmlgui6                     libxmmsclient6
+  diodon                        libkf6dnssd-data               libkfontinst6                     libzeitgeist-2.0-0
+  dolphin-data                  libkf6dnssd6                   libkfontinstui6                   linux-image-6.12.48+deb13-amd64
+  dolphin-doc                   libkf6doctools6                libkmpris6                        lxappearance-obconf
+  ffmpegthumbs                  libkf6filemetadata-bin         libkpipewire-data                 lxinput
+  fonts-hack                    libkf6filemetadata-data        libkpipewire6                     lxmusic
+  frameworkintegration6         libkf6filemetadata3            libkpipewiredmabuf6               mousepad
+  gnome-brave-icon-theme        libkf6globalaccel-data         libkpipewirerecord6               network-manager-applet
+  gnome-colors                  libkf6globalaccel6             libkscreen-bin                    numlockx
+  gnome-colors-common           libkf6holidays-data            libkscreen-data                   okular-data
+  gnome-dust-icon-theme         libkf6holidays6                libksysguard-data                 okular-doc
+  gnome-human-icon-theme        libkf6i18nlocaledata6          libksysguardformatter2            phonon-backend-vlc-common
+  gnome-illustrious-icon-theme  libkf6iconthemes-bin           libksysguardsensorfaces2          phonon4qt6
+  gnome-noble-icon-theme        libkf6iconthemes-data          libksysguardsensors2              phonon4qt6-backend-vlc
+  gnome-system-tools            libkf6iconthemes6              libksysguardsystemstats2          powerdevil
+  gnome-wine-icon-theme         libkf6iconwidgets6             libkwaylandclient6                powerdevil-data
+  gnome-wise-icon-theme         libkf6idletime6                libkworkspace6-6                  python3-sentry-sdk
+  gucharmap                     libkf6itemmodels6              liblayershellqtinterface6         qdbus-qt6
+  install-info                  libkf6itemviews-data           libminizip1t64                    qml6-module-org-kde-activities
+  isa-support                   libkf6itemviews6               libmousepad0                      qml6-module-org-kde-bluezqt
+  kf6-breeze-icon-theme         libkf6jobwidgets-data          liboobs-1-5                       qml6-module-org-kde-breeze
+  kimageformat6-plugins         libkf6jobwidgets6              libosmesa6                        qml6-module-org-kde-config
+  kio-extras-data               libkf6kcmutils-bin             libosmesa6:i386                   qml6-module-org-kde-coreaddons
+  kirigami-addons-data          libkf6kcmutils-data            libpackagekitqt6-1                qml6-module-org-kde-desktop
+  konqueror-data                libkf6kcmutils6                libphonon-l10n                    qml6-module-org-kde-draganddrop
+  konqueror-doc                 libkf6kcmutilscore6            libphonon4qt6-4t64                qml6-module-org-kde-guiaddons
+  kpackagetool6                 libkf6kcmutilsquick6           libplasma-geolocation-interface6  qml6-module-org-kde-iconthemes
+  kwayland-integration          libkf6kiocore6                 libplasma5support-data            qml6-module-org-kde-kcmutils
+  kwayland5-data                libkf6kiofilewidgets6          libplasma6                        qml6-module-org-kde-kholidays
+  kwayland6-data                libkf6kiogui6                  libplasmaactivities6              qml6-module-org-kde-kirigamiaddons-components
+  kwin-data                     libkf6kiowidgets6              libplasmaactivitiesstats1         qml6-module-org-kde-kirigamiaddons-datetime
+  layer-shell-qt                libkf6konqsettings7            libpoppler-qt6-3t64               qml6-module-org-kde-kirigamiaddons-delegates
+  libaccounts-glib0             libkf6modemmanagerqt6          libpowerdevilcore2                qml6-module-org-kde-kirigamiaddons-formcard
+  libaccounts-qt6-1             libkf6networkmanagerqt6        libprocesscore10                  qml6-module-org-kde-kirigamiaddons-treeview
+  libappimage1.0abi1t64         libkf6newstuff-data            libqaccessibilityclient-qt6-0     qml6-module-org-kde-kitemmodels
+  libappstreamqt3               libkf6newstuffcore6            libqalculate-data                 qml6-module-org-kde-kquickcontrols
+  libayatana-appindicator3-1    libkf6newstuffwidgets6         libqalculate23                    qml6-module-org-kde-kquickcontrolsaddons
+  libbatterycontrol6            libkf6notifyconfig-data        libqcoro6dbus0t64                 qml6-module-org-kde-ksvg
+  libboost-filesystem1.83.0     libkf6package-data             libqmobipocket6-2                 qml6-module-org-kde-ksysguard
+  libcolorcorrect6              libkf6package6                 libqt5quickcontrols2-5            qml6-module-org-kde-kwindowsystem
+  libddcutil5                   libkf6parts-data               libqt5quicktemplates2-5           qml6-module-org-kde-newstuff
+  libdee-1.0-4                  libkf6people-data              libqt6bluetooth6                  qml6-module-org-kde-notifications
+  libdiodon0                    libkf6people6                  libqt6bluetooth6-bin              qml6-module-org-kde-people
+  libdmtx0t64                   libkf6peoplebackend6           libqt6labsplatform6               qml6-module-org-kde-pipewire
+  libdolphinvcs6                libkf6prison6                  libqt6multimedia6                 qml6-module-org-kde-prison
+  libepub0                      libkf6prisonscanner6           libqt6openglwidgets6              qml6-module-org-kde-quickcharts
+  libfakekey0                   libkf6pty-data                 libqt6positioning6                qml6-module-org-kde-sonnet
+  libgucharmap-2-90-7           libkf6pty6                     libqt6positioning6-plugins        qml6-module-org-kde-syntaxhighlighting
+  libjs-jquery                  libkf6pulseaudioqt5            libqt6positioningquick6           qml6-module-org-kde-userfeedback
+  libjs-underscore              libkf6purpose-data             libqt6printsupport6               qml6-module-qt-labs-folderlistmodel
+  libkaccounts6-2               libkf6purpose6                 libqt6quickwidgets6               qml6-module-qt-labs-platform
+  libkdcrawqt6-5                libkf6purposewidgets6          libqt6sensors6                    qml6-module-qt-labs-qmlmodels
+  libkdecorations3-6            libkf6qqc2desktopstyle-data    libqt6serialport6                 qml6-module-qt5compat-graphicaleffects
+  libkdecorations3private2      libkf6runner6                  libqt6shadertools6                qml6-module-qtcore
+  libkdsoap-qt6-2               libkf6screen8                  libqt6sql6                        qml6-module-qtmultimedia
+  libkdsoapwsdiscoveryclient0   libkf6screendpms8              libqt6sql6-sqlite                 qml6-module-qtpositioning
+  libkexiv2qt6-0                libkf6service-bin              libqt6texttospeech6               qml6-module-qtquick-dialogs
+  libkf5kirigami2-5             libkf6service-data             libqt6uitools6                    qml6-module-qtquick-particles
+  libkf5style5                  libkf6service6                 libqt6virtualkeyboard6            qml6-module-qtquick-tooling
+  libkf5waylandclient5          libkf6solid-data               libqt6webchannel6                 qml6-module-qtquick-virtualkeyboard
+  libkf5windowsystem-data       libkf6solid6                   libqt6webchannelquick6            qml6-module-qtwebchannel
+  libkf5windowsystem5           libkf6sonnet-data              libqt6webengine6-data             qml6-module-qtwebengine
+  libkf6archive-data            libkf6sonnetcore6              libqt6webenginecore6              qml6-module-sso-onlineaccounts
+  libkf6archive6                libkf6sonnetui6                libqt6webenginecore6-bin          qt6-virtualkeyboard-plugin
+  libkf6attica6                 libkf6statusnotifieritem-data  libqt6webenginequick6             signon-plugin-oauth2
+  libkf6auth-data               libkf6statusnotifieritem6      libqt6webenginewidgets6           sonnet6-plugins
+  libkf6authcore6               libkf6style6                   libquickcharts1                   sse3-support
+  libkf6baloo6                  libkf6su-bin                   libquickchartscontrols1           sshfs
+  libkf6balooengine6            libkf6su-data                  libsignon-plugins-common1         system-tools-backends
+  libkf6bluezqt-data            libkf6su6                      libsignon-qt6-1                   systemd-coredump
+  libkf6bluezqt6                libkf6svg6                     libsquashfuse0                    usermode
+  libkf6bookmarks-data          libkf6syndication6             libtaskmanager6                   xarchiver
+  libkf6bookmarks6              libkf6syntaxhighlighting-data  libuser1                          xfconf
+  libkf6bookmarkswidgets6       libkf6syntaxhighlighting6      libxapian30                       xmms2-core
+  libkf6breezeicons6            libkf6texteditor-data          libxcb-dpms0                      xmms2-plugin-alsa
+  libkf6calendarevents6         libkf6textwidgets-data         libxcb-record0                    xmms2-plugin-id3v2
+  libkf6codecs-data             libkf6textwidgets6             libxdgutilsbasedir1.0.1           xmms2-plugin-mad
+  libkf6codecs6                 libkf6threadweaver6            libxdgutilsdesktopentry1.0.1      xmms2-plugin-vorbis
+  libkf6completion-data         libkf6unitconversion-data      libxfce4ui-2-0                    xwaylandvideobridge
+  libkf6completion6             libkf6unitconversion6          libxfce4ui-common                 zeitgeist-core
+  libkf6configqml6              libkf6userfeedback-data        libxfce4util-bin
+  libkf6configwidgets-data      libkf6userfeedback-doc         libxfce4util-common
+  libkf6configwidgets6          libkf6userfeedbackcore6        libxfce4util7
+Use 'sudo apt autoremove' to remove them.
+
+Installing:
+  php8.2-odbc
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 15
+  Download size: 33.3 kB
+  Space needed: 143 kB / 39.7 GB available
+
+Get:1 https://packages.sury.org/php trixie/main amd64 php8.2-odbc amd64 8.2.30-1+0~20251218.82+debian13~1.gbpea562a [33.3 kB]
+Fetched 33.3 kB in 1s (41.9 kB/s)                  
+Selecting previously unselected package php8.2-odbc.
+(Reading database ... 417598 files and directories currently installed.)
+Preparing to unpack .../php8.2-odbc_8.2.30-1+0~20251218.82+debian13~1.gbpea562a_amd64.deb ...
+Unpacking php8.2-odbc (8.2.30-1+0~20251218.82+debian13~1.gbpea562a) ...
+Setting up php8.2-odbc (8.2.30-1+0~20251218.82+debian13~1.gbpea562a) ...
+Creating config file /etc/php/8.2/mods-available/odbc.ini with new version
+Creating config file /etc/php/8.2/mods-available/pdo_odbc.ini with new version
+Processing triggers for libapache2-mod-php8.2 (8.2.30-1+0~20251218.82+debian13~1.gbpea562a) ...
+Processing triggers for php8.2-fpm (8.2.30-1+0~20251218.82+debian13~1.gbpea562a) ...
+NOTICE: Not enabling PHP 8.2 FPM by default.
+NOTICE: To enable PHP 8.2 FPM in Apache2 do:
+NOTICE: a2enmod proxy_fcgi setenvif
+NOTICE: a2enconf php8.2-fpm
+NOTICE: You are seeing this message because you have apache2 package installed.
+Processing triggers for php8.2-cli (8.2.30-1+0~20251218.82+debian13~1.gbpea562a) ...
+Scanning processes...                                                                                                                             
+Scanning processor microcode...                                                                                                                   
+Scanning linux images...                                                                                                                          
+
+Running kernel seems to be up-to-date.
+
+The processor microcode seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+
+
+
 https://chatgpt.com/c/69763b9e-23bc-8321-96f2-1a0a81b1f599
