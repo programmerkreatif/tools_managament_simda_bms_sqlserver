@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql2019
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "PasswordKuat123!"
+      MSSQL_PID: "Express" # atau Developer / Standard
+      TZ: Asia/Jakarta
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./data:/var/opt/mssql
+      - ./backup:/backup
+    networks:
+      - simda_net
+
+networks:
+  simda_net:
+    driver: bridge

@@ -597,6 +597,32 @@ No user sessions are running outdated binaries.
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 
 
+###########################################################################
+###########################################################################
+###########################################################################
+###########################################################################
 
+Jalankan docker 
+
+###########################################################################
+###########################################################################
+###########################################################################
+###########################################################################
+###########################################################################
+###########################################################################
+
+tommy@tommy:~/www_docs/php82/tools_managament_simda_bms_sqlserver$ docker rm -f mssql2019
+mssql2019
+tommy@tommy:~/www_docs/php82/tools_managament_simda_bms_sqlserver$ docker ps -a
+CONTAINER ID   IMAGE                                        COMMAND                  CREATED      STATUS                  PORTS     NAMES
+c7d237681796   mcr.microsoft.com/mssql/server:2019-latest   "/opt/mssql/bin/perm…"   2 days ago   Exited (0) 2 days ago             sqlserver
+tommy@tommy:~/www_docs/php82/tools_managament_simda_bms_sqlserver$ docker run -d \
+  --name mssql2019 \
+  -e "ACCEPT_EULA=Y" \
+  -e "SA_PASSWORD=PasswordStrong123!" \
+  -p 1433:1433 \
+  mcr.microsoft.com/mssql/server:2019-latest
+79f472d4eaf79fb2a2c6824519347340d242e6e8697fe3c37ef608819b15e3d3
+tommy@tommy:~/www_docs/php82/tools_managament_simda_bms_sqlserver$ sqlcmd -S 127.0.0.1,1433 -U sa -P "PasswordStrong123!"
 
 https://chatgpt.com/c/69763b9e-23bc-8321-96f2-1a0a81b1f599
