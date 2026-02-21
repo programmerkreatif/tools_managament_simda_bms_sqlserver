@@ -5,5 +5,14 @@ namespace App\Models;
 class Dtproperties extends BaseSqlServerModel
 {
     protected $table = 'dtproperties';
-    protected $primaryKey = null;
+
+    protected $fillable = [
+        'id',
+        'objectid',
+        'property',
+        'value',
+        'uvalue',
+        'lvalue',
+        'version'
+    ];
 }

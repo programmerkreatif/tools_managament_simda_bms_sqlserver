@@ -6,4 +6,8 @@ class RefBidang extends BaseSqlServerModel
 {
     protected $table = 'Ref_Bidang';
     protected $primaryKey = 'Kd_Bidang';
+
+    protected $fillable = [
+        'Nm_Bidang'
+    ];
 }

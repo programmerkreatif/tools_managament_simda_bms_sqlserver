@@ -6,4 +6,8 @@ class RefMasalah extends BaseSqlServerModel
 {
     protected $table = 'Ref_Masalah';
     protected $primaryKey = 'Kd_Masalah';
+
+    protected $fillable = [
+        'Nm_Masalah'
+    ];
 }

@@ -5,5 +5,75 @@ namespace App\Models;
 class TaKibar extends BaseSqlServerModel
 {
     protected $table = 'Ta_KIBAR';
-    protected $primaryKey = null;
+
+    protected $fillable = [
+        'IDPemda',
+        'Kd_Id',
+        'No_Urut',
+        'Kd_Riwayat',
+        'Kd_Prov',
+        'Kd_Kab_Kota',
+        'Kd_Bidang',
+        'Kd_Unit',
+        'Kd_Sub',
+        'Kd_UPB',
+        'Kd_Aset1',
+        'Kd_Aset2',
+        'Kd_Aset3',
+        'Kd_Aset4',
+        'Kd_Aset5',
+        'No_Register',
+        'Kd_Pemilik',
+        'Tgl_Dokumen',
+        'No_Dokumen',
+        'Tgl_Perolehan',
+        'Tgl_Pembukuan',
+        'Luas_M2',
+        'Alamat',
+        'Hak_Tanah',
+        'Sertifikat_Tanggal',
+        'Sertifikat_Nomor',
+        'Penggunaan',
+        'Asal_usul',
+        'Harga',
+        'Keterangan',
+        'Tahun',
+        'No_SP2D',
+        'No_ID',
+        'Kd_Kecamatan',
+        'Kd_Desa',
+        'Kd_Prov1',
+        'Kd_Kab_Kota1',
+        'Kd_Bidang1',
+        'Kd_Unit1',
+        'Kd_Sub1',
+        'Kd_UPB1',
+        'No_Register1',
+        'Invent',
+        'No_SKGuna',
+        'Kd_Penyusutan',
+        'Kd_Data',
+        'Kd_Alasan',
+        'Log_User',
+        'Log_entry',
+        'Nm_Rekanan',
+        'Alamat_Reakanan',
+        'Tgl_Mulai',
+        'Tgl_Selesai',
+        'Kd_KA',
+        'Kd_Koreksi',
+        'IDData',
+        'Kd_Aset8',
+        'Kd_Aset80',
+        'Kd_Aset81',
+        'Kd_Aset82',
+        'Kd_Aset83',
+        'Kd_Aset84',
+        'Kd_Aset85'
+    ];
+
+    public function idpemda()
+    {
+        return $this->belongsTo(TaKibA::class, 'IDPemda');
+    }
 }

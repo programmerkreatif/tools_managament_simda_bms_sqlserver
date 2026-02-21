@@ -6,4 +6,8 @@ class RefProvinsi extends BaseSqlServerModel
 {
     protected $table = 'Ref_Provinsi';
     protected $primaryKey = 'Kd_Prov';
+
+    protected $fillable = [
+        'Nm_Provinsi'
+    ];
 }
